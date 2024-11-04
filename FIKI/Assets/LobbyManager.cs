@@ -40,4 +40,11 @@ public class LobbyManager : MonoBehaviour
         hygieneText.text = hygiene + "%";
         coinsText.text = coins.ToString("F3");
     }
+
+
+    public void PlayButton()
+    {
+        LevelTransitionController.instance.StartTransition(2, 2);
+    }
+
 }
