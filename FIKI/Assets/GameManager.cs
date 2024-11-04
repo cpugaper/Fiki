@@ -31,7 +31,7 @@ public class Manager : MonoBehaviour
     }
     private void Start()
     {
-        currentLevel = 3;
+       
         pauseCanvas.SetActive(false);
         currentLevelText.text = currentLevel.ToString();
     }
@@ -50,7 +50,12 @@ public class Manager : MonoBehaviour
     }
     public void LevelCompleted()
     {
-        SceneManager.LoadScene("RewardScreen");
+        LevelTransitionController.instance.StartTransition(4,2);
+    }
+    public void LevelSelectorButton()
+    {
+        Time.timeScale = 1;
+        LevelTransitionController.instance.StartTransition(2, 2);
     }
     public void Save()
     {
