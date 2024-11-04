@@ -35,4 +35,8 @@ public class LevelSelector : MonoBehaviour
     {
 
     }
+    public void Atras()
+    {
+        SceneManager.LoadScene("Lobby");
+    }
 }
