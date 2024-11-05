@@ -28,8 +28,11 @@ public class TimerScript : MonoBehaviour
                 Debug.Log("¡Tiempo agotado!");
             }
         }
-
+        if (timerText)
+        {
+            timerText.text = Mathf.Ceil(timeRemaining).ToString();
+        }
         // Actualiza el texto del temporizador
-        timerText.text = Mathf.Ceil(timeRemaining).ToString();
+        
     }
 }
