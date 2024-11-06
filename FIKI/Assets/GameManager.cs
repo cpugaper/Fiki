@@ -50,6 +50,7 @@ public class Manager : MonoBehaviour
     }
     public void LevelCompleted()
     {
+        Save();
         LevelTransitionController.instance.StartTransition(4,2);
     }
     public void LevelSelectorButton()

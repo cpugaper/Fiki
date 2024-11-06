@@ -44,7 +44,7 @@ public class LobbyManager : MonoBehaviour
 
     public void PlayButton()
     {
-        LevelTransitionController.instance.StartTransition(2, 2);
+        LevelTransitionController.instance.StartTransition(3, 2);
     }
 
 }
